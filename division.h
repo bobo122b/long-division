@@ -1,5 +1,7 @@
 #ifndef DIVISION_H
 #define DIVISION_H
+#include <stdio.h>
+#include <stdlib.h>
 
 void takeInputs(double* coefficients, int power);
 int isDivisible(int numPower, int denomPower);
