@@ -1,6 +1,4 @@
 #include "division.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int isDivisible(int numPower, int denomPower)
 {
