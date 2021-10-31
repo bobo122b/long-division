@@ -2,29 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void takeInputs(double* coefficients, int power)
-{
-    int i;
-    if (power >= 0)
-    {
-        for (i = 0; i < power; i++)
-        {
-            if (power - i == 1)
-            {
-                printf("Enter the coefficient of X : ");
-                scanf("%lf", (coefficients + i));
-            }
-            else
-            {
-                printf("Enter the coefficient of X^%d : ", power - i);
-                scanf("%lf", (coefficients + i));
-            }
-        }
-        printf("Enter the constant term : ");
-        scanf("%lf", (coefficients + i));
-    }
-}
-
 int isDivisible(int numPower, int denomPower)
 {
     // a function that returns 1 if we can divide the numerator by the denominator, 0 if not divisible (numerator power is les than denominator's power)
